@@ -172,7 +172,7 @@ body{
 @media screen and (max-width:1100px){
     body{
         background-image: url(./images/1x/bgph.png);
-        box-sizing: content-box;
+    
         
         align-items: center;
     }
