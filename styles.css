@@ -267,9 +267,9 @@ body{
         font-size: 10px;
     }
     #imagenow{
-        position: absolute;
-        bottom :440px; 
-        left: 220px;
+        position: relative;
+        left: 180px;
+        bottom: 100px;
         height: 100px;
     }
     #note{
