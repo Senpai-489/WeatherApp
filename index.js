@@ -46,7 +46,7 @@ async function logWeather() {
    document.querySelector("#imagenow").src= "./images/clear.png"}
    if(condition.includes("fog")||condition.includes("Mist")){
    document.querySelector("#imagenow").src= "./images/mist.png"}
-   if(condition.includes("Overcast")){
+   if(condition.includes("Overcast")||condition.includes("cloudy")||condition.includes("Cloudy")){
    document.querySelector("#imagenow").src= "./images/clouds.png"}
    if(condition.includes("Blizzard")){
    document.querySelector("#imagenow").src= "./images/rain.png"}

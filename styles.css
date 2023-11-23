@@ -172,7 +172,7 @@ body{
 @media screen and (max-width:650px){
     body{
         background-image: url(./images/1x/bgph.png);
-    
+        background-size: 100% 100% ;
         
         align-items: center;
     }
@@ -184,6 +184,7 @@ body{
         
         position: relative;
         top: 12px;
+        left:8px;
     }
     #date{
         font-size: 15px;
@@ -191,6 +192,7 @@ body{
         margin: 3px 5px;
         position: relative;
         top: 8px;
+        left:8px;
     }
     #temp{
         font-size: 50px;
@@ -225,7 +227,7 @@ body{
         
     }
     .card{
-        background-image: linear-gradient(#1c1c1c,#0b0b0b);
+        background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
         width: 80vw;
         /* height: 70vh; */
         border-radius: 20px;
@@ -263,16 +265,18 @@ body{
         font-size: 10px;
     }
     #imagenow{
-        position: fixed;
-        bottom :85vh; 
-        left: 205px;
+        position: absolute;
+        bottom :440px; 
+        left: 220px;
         height: 100px;
     }
     #note{
         position: absolute;
-        bottom: 550px;
+        bottom: 82vh;
         left: 20px;
+        color: #2a2a2a;
         font-size: 15px;
-        filter: drop-shadow(0px 0px 1px #2a2a2a);
+        font-weight: bold;
+        filter: drop-shadow(0px 0px 0px #2a2a2a);
     }
 }
