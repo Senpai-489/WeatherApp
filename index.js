@@ -24,7 +24,7 @@ async function logWeather() {
  dateTime();
   var cityName= document.getElementById("city").value;
   var key="b6c69176576944dba55101239233010";
-    const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=`+cityName+"&aqi=no");
+    const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=`+cityName+"&aqi=no");
     Weather = await response.json();
     console.log(Weather);
    document.querySelector("#cityDisplay").innerHTML= Weather.location.name+", "+Weather.location.country;
