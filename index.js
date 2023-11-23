@@ -26,7 +26,7 @@ async function logWeather() {
   var key="b6c69176576944dba55101239233010";
     const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${key}&q=`+cityName+"&aqi=no");
     Weather = await response.json();
-    console.log(Weather);
+    
    document.querySelector("#cityDisplay").innerHTML= Weather.location.name+", "+Weather.location.country;
    document.querySelector("#temp").innerHTML= Weather.current.temp_c + "°C ";
    document.querySelector("#condition").innerHTML= "("+Weather.current.condition.text+")";
@@ -34,7 +34,7 @@ async function logWeather() {
    document.querySelector("#wind").innerHTML= Weather.current.wind_kph+"Km/hr";
    
    var cityName= document.getElementById("city").value;
-   console.log(cityName);
+  
    var condition =Weather.current.condition.text;
    if(condition.includes("rain")){
    document.querySelector("#imagenow").src= "./images/rain.png"}
