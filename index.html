@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="search">
+
+        <input id="city" type="text" placeholder="Input City or Country Name">
+        <button id="myButton"><img src="./images/search.png"></button>
+    </div>
+    <div class="card">
+        <div class="heading">
+            <p id="date"></p>
+            <p id="time"></p><br>
+            <p id="temp">-- °C</p>
+            <p id="condition"></p>
+            <hr>
+            <!-- <img id="imagenow" src="./images/clear.png" alt="condition"> -->
+
+
+        </div>
+        <div class="humWind">
+            <div id="hum">
+            <img src="./images/humidity.png" id="humidityimg">
+            <p id="humidity">--%</p></div>
+            <div id="winddiv">
+            <img src="./images/wind.png" id="windimg">
+            <p id="wind">-- Km/hr</p></div>
+        </div>
+        
+        <h1 id="cityDisplay">City</h1>
+        <img src="./images/clear.png" alt="Weather" id="imagenow">
+    </div>
+    <p id="note">Note: Try adding country name after the city for more accurate results</p>
+    <script src="index.js"></script>
+</body>
+
+</html>

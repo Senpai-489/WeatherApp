@@ -1,0 +1,278 @@
+@font-face {
+    font-family: erasLightItc;
+    src: url(./font/ITC\ Eras\ Light\ Regular.woff);
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: erasLightItc;
+    color: #7a7a7a;
+    box-sizing: border-box;
+    font-weight: lighter;
+}
+hr{
+    color: #aaaaaa;
+    width: 400px;
+    margin: 20px 50px;
+    border: 2px solid #9e9c9c;
+   
+}
+
+body{
+    
+    background-image: url(./images/1x/Artboard\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:100vw;
+    text-align: center;
+    height:auto;
+    
+}
+#date{
+
+    margin: 3vh 30px 1vh 50px;
+    text-align: left;
+    font-size: 25px;
+    color: #aaaaaa;
+    display: inline-block;
+}
+#time{
+    margin-left: 3vw;
+    text-align: left;
+    font-size: 25px;
+    color: #aaaaaa;
+    display: inline-block;
+    width: 500px;
+}
+#temp{
+   font-size: 80px;
+   font-weight: lighter;
+   position:relative;
+   left: 60px;
+   top: 20px;
+   width: 80px;
+   display: inline;
+}
+#condition{
+    margin-left: 6vw;
+    padding-top: 50px;
+    text-align: left;
+    font-size: 30px;
+    color: #aaaaaa;
+    display: inline;
+    
+}
+#imagenow{
+    position: relative;
+    bottom: 250px;
+    left:650px;
+    filter: drop-shadow(2px 2px 10px #ff6969);
+    
+}
+ p{
+    
+    margin:5px;
+    font-size: 30px;
+}
+.search :hover{
+    box-shadow: 0px 0px 10px #2a2a2a;
+    background-color: #2a2a2a;
+    color: #f9f9f9;
+}
+
+.heading p{
+    
+    font-size:70px;
+    font-weight: 700;
+    margin:10px 0px 50px 0px;
+}
+
+.heading img{
+    width: 120px;
+    margin: 0;
+}
+.card{
+    opacity: 1;
+    margin: 5vh 10vw ;
+    text-align: left;
+    display: inline-block;
+    width: 1000px;
+    height: 520px;
+    border-radius: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(./images/sddd.png);
+    
+}
+.search{
+    margin-top: 4vh;
+    width: 100%;
+    text-align: center;
+    justify-content: baseline;
+}
+.search input{
+    border-radius: 40px;
+    text-align: center;
+    background-color: #2a2a2a;
+    border: 0;
+    width: 20vw;
+    height: 5vh;
+    color: #f9f9f9;
+    
+}
+#cityDisplay{
+    font-size: 40px;
+    margin: 25px;
+    font-weight: lighter;
+    padding: 20px;
+    filter: drop-shadow(2px 2px 0px #f5f2f2);
+}
+.search button{
+    border-radius: 50px;
+    background-color: #2a2a2a;
+    height: 6vh;
+    border: 0;
+    width: 6vh;
+    cursor: pointer;
+}
+.search button img{
+    width:10px;
+}
+    
+.humWind img{
+   
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+.humWind p{
+    font-size: 40px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    
+}
+
+.inlines p{
+    display: inline;
+    font-size: 30px;
+    padding-bottom: 300px;
+    justify-content: space-around;
+}
+#note{
+    position: relative;
+    bottom: 140px;
+    font-weight: 800;
+    color: #ff6969;
+
+}
+@media screen and (max-width:1100px){
+    body{
+        background-image: url(./images/1x/bgph.png);
+        box-sizing: content-box;
+        
+        align-items: center;
+    }
+
+    #time{
+        font-size: 15px;
+        display: block ;
+        margin: 3px 5px;
+        
+        position: relative;
+        top: 12px;
+    }
+    #date{
+        font-size: 15px;
+        display: inline ;    
+        margin: 3px 5px;
+        position: relative;
+        top: 8px;
+    }
+    #temp{
+        font-size: 50px;
+        color: #aaaaaa ;
+        display: inline;
+        position: relative;
+        left:40px;
+        top:25px;
+    }
+    #condition{
+        font-size: 20px;
+        color: #aaaaaa ;
+        display: inline;
+        position: relative;
+        left:25px;
+        top:25px;
+    }
+    hr{
+        width: 240px;
+    }
+    
+    #hum{
+        display: block;
+    }
+    #winddiv{
+        display: block;
+        
+    }
+    #citydisplay h1{
+        color: #7a7a7a;
+        font-size: small;
+        
+    }
+    .card{
+        background-image: linear-gradient(#1c1c1c,#0b0b0b);
+        width: 80vw;
+        /* height: 70vh; */
+        border-radius: 20px;
+        margin-top: 80px;
+    }
+    
+    .search input{
+        width: 200px;
+
+    }
+    .heading h1{
+        font-size: 30px;
+    }
+    .heading p{
+        font-size: 2px;
+    }
+    .humWind{
+        color: #7a7a7a;
+    }
+    .humWind img{
+        height: 40px;
+        width: 40px;
+        margin-left: 8vw;
+    }
+    .humWind p{
+        font-size: 20px;
+    }
+    .names p{
+        font-size: 10px;
+        justify-content: space-between;
+        margin-left: 3px;
+    }
+   p{
+        
+        font-size: 10px;
+    }
+    #imagenow{
+        position: fixed;
+        bottom :85vh; 
+        left: 205px;
+        height: 100px;
+    }
+    #note{
+        position: absolute;
+        bottom: 550px;
+        left: 20px;
+        font-size: 15px;
+        filter: drop-shadow(0px 0px 1px #2a2a2a);
+    }
+}
