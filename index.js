@@ -9,7 +9,7 @@ function dateTime(){
   var year=date.getFullYear();
   const months = ["January","Febnruary","March","April","May","June","July","August","September","October","November","December"]
   document.querySelector("#date").innerHTML= day+" "+months[month]+" "+year;
-  document.querySelector("#time").innerHTML= date.getHours()+":"+date.getMinutes();
+  document.querySelector("#time").innerHTML= `${date.getHours()<10?"0"+date.getHours():date.getHours()}`+" : "+`${date.getMinutes()<10 ?"0"+ date.getMinutes() : date.getMinutes()}`;
 
 }
 
