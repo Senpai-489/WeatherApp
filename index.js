@@ -2,14 +2,14 @@
 
 var date = new Date();
 dateTime();
-setInterval(dateTime(),1000)
+
 function dateTime(){
   var day=  date.getDate();
   var month=date.getMonth();
   var year=date.getFullYear();
   const months = ["January","Febnruary","March","April","May","June","July","August","September","October","November","December"]
   document.querySelector("#date").innerHTML= day+" "+months[month]+" "+year;
-  document.querySelector("#time").innerHTML= date.toTimeString();
+  document.querySelector("#time").innerHTML= date.getHours()+":"+date.getMinutes();
 
 }
 

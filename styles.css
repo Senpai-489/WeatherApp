@@ -173,16 +173,14 @@ body{
 }
 @media screen and (max-width:650px){
 
-    html,body{
-        
-    }
     * { 
         margin: 0;
         padding: 0;
-        box-sizing: border-box;
+        box-sizing: border-box; 
+        overflow-x: hidden;
     }   
      body{
-        overflow-x: hidden;
+       
         background-image: url(./images/1x/bgph.png);
         background-repeat: no-repeat;
         background-size: cover;
