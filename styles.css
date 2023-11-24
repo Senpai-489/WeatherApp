@@ -173,18 +173,22 @@ body{
 }
 @media screen and (max-width:650px){
 
+    html,body{
+        
+    }
     * { 
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }   
      body{
+        overflow-x: hidden;
         background-image: url(./images/1x/bgph.png);
-        background-size: cover ;
-        background-repeat: repeat-x;
-        min-height: 100vh;
-        zoom: 0%;
-        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:auto;
+        text-align: center;
+        height:auto;
     }
 
     #time{
